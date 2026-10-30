@@ -1,0 +1,21 @@
+name: Publish to Dev.to
+
+on:
+  push:
+    paths:
+      - 'posts/*.md'
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Publish Articles to Dev.to
+        uses: s201016/devto-publisher-action@v1.0
+        with:
+          devto_token: ${{ secrets.DEVTO_TOKEN }}
+          post_dir: 'posts'

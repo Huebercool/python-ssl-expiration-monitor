@@ -11,3 +11,13 @@ Powered by the **[SSL Certificate Inspector API](https://rapidapi.com/Huebercool
 ### 1. Install Dependencies
 ```bash
 pip install -r requirements.txt
+export RAPIDAPI_KEY="your_actual_rapidapi_key_here"
+python risk_scanner.py
+
+DOS
+set RAPIDAPI_KEY="your_actual_rapidapi_key_here"
+python risk_scanner.py
+
+Shell
+$env:RAPIDAPI_KEY="your_actual_rapidapi_key_here"
+python risk_scanner.py

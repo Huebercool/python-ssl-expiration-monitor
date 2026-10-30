@@ -10,7 +10,7 @@ Expired SSL/TLS certificates cause unexpected application downtime and security 
 ## Quick Start
 
 1. Clone the repository:
-```bash
-git clone [https://github.com/huebercool/python-ssl-expiration-monitor.git](https://github.com/huebercool/python-ssl-expiration-monitor.git)
 cd python-ssl-expiration-monitor
 pip install -r requirements.txt
+export RAPIDAPI_KEY="your_api_key_here"
+python ssl_monitor.py
